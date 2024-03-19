@@ -1,0 +1,131 @@
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav #nav-links ul li{
+    display: inline;
+    margin: 20px;
+    font-size: 20px;
+    transition: 0.3s ease-in-out;
+    border: 3px solid rgb(67, 21, 95);
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(67, 21, 95);
+    font-weight: 700;
+}
+
+.nav #nav-links ul li:hover{
+    box-shadow: 4px 4px 8px rgb(67, 21, 95);
+}
+
+.nav #logo{
+    margin-top: 10px;
+}
+
+.nav #logo img{
+    width:100%
+}
+
+.nav .fa-bars{
+    font-size: 30px;
+}
+
+/* Pop Nav */
+
+.pop-nav{
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    height: max-content;
+    background-color: rgba(206, 161, 237, 0.856);
+    transition: 0.5s ease-in-out;
+}
+
+.pop-nav #links{
+    margin-top: 30px;
+    line-height: 40px;
+}
+
+.pop-nav #links div{
+    border: 2px solid  rgb(67, 21, 95);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Bruno Ace SC", sans-serif;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.pop-nav .fa-xmark{
+    font-size: 30px;
+}
+
+.pop-nav #cut{
+    border: none;
+    background-color: transparent;
+    float: right;
+    padding: 10px 10px;
+}
+
+.nav #bars{
+    border: 2px solid rgb(67, 21, 95);
+    background-color: transparent;
+    display: none;
+}
+
+.pop-nav #cut:hover .fa-xmark{
+    color: white;
+}
+
+.pop-nav #links div:hover{
+    color:white;
+    background-color: rgb(67, 21, 95);
+}
+
+@media screen and (max-width:1190px) {
+    .nav #nav-links ul li{
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    .nav #logo{
+        width:200px
+    }
+
+}
+
+@media screen and (max-width:840px) {
+    .nav #nav-links ul li{
+        margin: 8px;
+        font-size: 12px;
+    }
+
+    .nav #logo{
+        width:160px
+    }
+}
+
+@media screen and (max-width:700px) {
+    .nav #nav-links{
+        display: none;
+    }
+
+    .nav #bars{
+        display: block;
+    }
+
+    .nav{
+        justify-content: space-between;
+        padding:0 10px;
+    }
+}

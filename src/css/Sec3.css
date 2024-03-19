@@ -1,0 +1,105 @@
+.sec3 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#sec3-h1 {
+    font-family: "Bruno Ace SC", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 50px;
+    color: #443266;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+#sec3-h1 span {
+    color: #8C489F
+}
+
+.sec3 .fa-brands, .fa-solid {
+    font-size: 80px;
+    color: #443266;
+}
+
+.sec3 .fa-brands:hover{
+    color: #8C489F;
+}
+
+.sec3 .skill{
+    width:30%;
+    border: 3px solid #8C489F;
+    background-color: #F1F0FF;
+    background: linear-gradient(to right,#C3C3E5,transparent);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin: 20px 10px;
+}
+
+.sec3 #o-line{
+    height: 10px;
+    width:70%;
+    background-color: #C3C3E5;
+    border-radius: 10px;
+    padding: 0px 7px;
+}
+
+.sec3 #i-line-1{
+    height: 100%;
+    width: 80%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+.sec3 #i-line-2{
+    height: 100%;
+    width: 70%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+.sec3 #i-line-3{
+    height: 100%;
+    width: 60%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+.sec3 #i-line-4{
+    height: 100%;
+    width: 60%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+.sec3 #i-line-5{
+    height: 100%;
+    width: 70%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+.sec3 #i-line-6{
+    height: 100%;
+    width: 70%;
+    background-color: #443266;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:800px) {
+    .sec3 .skill{
+        width:300px;
+    }
+    #sec3-h1 {
+        font-size: 35px;
+    }
+}
