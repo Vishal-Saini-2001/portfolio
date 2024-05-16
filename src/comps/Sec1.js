@@ -40,7 +40,7 @@ const Sec1 = () => {
                     <img src={photo} />
                 </div>
             </div>
-            <div id='sec1-btns' data-aos="zoom-in">
+            <div id='sec1-btns' data-aos="zoom-in" data-aos-once="true">
                 <button id='sec1-btn' onClick={()=>navigate('/resume')} >Resume</button>
                 <a href='https://github.com/Vishal-Saini-2001' target='blank'><i class="fa-brands fa-github"></i></a>
                 <a href='https://www.linkedin.com/in/vishal-saini-a6667b287/' target='blank'><i class="fa-brands fa-linkedin"></i></a>

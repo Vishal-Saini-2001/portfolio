@@ -75,18 +75,20 @@
 
 @media screen and (max-width:1160px) {
     .sec1 #content{
-        font-size: 22px;
+        font-size: 19px;
     }
 }
 
 @media screen and (max-width:860px) {
     .sec1 #content{
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width:730px) {
+
     .sec1 #content{
+        width:400px;
         font-size: 15px;
     }
 }
@@ -100,8 +102,8 @@
     }
 
     .sec1 #content{
-        width:500px;
-        font-size: 22px;
+        width:400px;
+        font-size: 17px;
         text-align: center;
     }
 
@@ -118,8 +120,8 @@
 
 @media screen and (max-width:400px) {
     .sec1 #content{
-        width:390px;
-        font-size: 16px;
+        width:320px;
+        font-size: 14px;
         line-height: 10px;
         text-align: center;
     }

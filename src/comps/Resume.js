@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import resume from './resume.pdf';
+import resume from './MyCV.pdf';
 import { Worker } from '@react-pdf-viewer/core';
 import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';

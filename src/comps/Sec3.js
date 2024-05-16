@@ -45,49 +45,49 @@ const Sec3 = () => {
                 <div className='skill'data-aos="flip-up">
                     <i class="fa-brands fa-html5"></i>
                     <div id='o-line'>
-                        <div id='i-line-1'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-1'></div>
                     </div>
                     <h3>{percent[0]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-css3-alt"></i>
                     <div id='o-line'>
-                        <div id='i-line-1'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-1'></div>
                     </div>
                     <h3>{percent[1]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-js"></i>
                     <div id='o-line'>
-                        <div id='i-line-2'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-2'></div>
                     </div>
                     <h3>{percent[2]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-react"></i>
                     <div id='o-line'>
-                        <div id='i-line-3'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-3'></div>
                     </div>
                     <h3>{percent[3]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-node-js"></i>
                     <div id='o-line'>
-                        <div id='i-line-4'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-4'></div>
                     </div>
                     <h3>{percent[4]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-git-alt"></i>
                     <div id='o-line'>
-                        <div id='i-line-5'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-5'></div>
                     </div>
                     <h3>{percent[5]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
                     <i class="fa-solid fa-c"></i>
                     <div id='o-line'>
-                        <div id='i-line-6'></div>
+                        <div data-aos="fade-right" data-aos-duration="2500" id='i-line-6'></div>
                     </div>
                     <h3>{percent[6]}%</h3>
                 </div>
