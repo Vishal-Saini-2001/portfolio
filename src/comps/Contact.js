@@ -1,37 +1,31 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import '../css/Contact.css'
 import emailjs from '@emailjs/browser';
 import img from '../assets/contact.svg'
 
 const Contact = () => {
 
-    const form = useRef();
-
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [msg, setMsg] = useState("");
+    const [data, setData] = useState({
+        email_id: "",
+        message: "",
+        from_name: ""
+    })
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        emailjs
-            .sendForm('service_tooasen', 'template_0gbgsf5', form.current, {
-                publicKey: '6qZUjMmUcbK_GNRbm',
-            })
-            .then(
-                () => {
-                    alert('MAIL SENT SUCCESSFULLY!');
-                    setEmail("");
-                    setName("");
-                    setMsg("")
-                },
-                (error) => {
-                    alert('FAILED...', error.text);
-                    setEmail("");
-                    setName("");
-                    setMsg("")
-                },
-            );
+        emailjs.send("service_tooasen","template_0gbgsf5", data, {
+                    publicKey: '6qZUjMmUcbK_GNRbm',
+                })
+        .then(()=>{
+            alert("Mail Sent Successfully!!")
+        })
+        .catch(error =>alert(error.text))
+        setData({
+            email_id: "",
+            message: "",
+            from_name: ""
+        })
+       
     };
     return (
         <>
@@ -41,14 +35,14 @@ const Contact = () => {
                     <img src={img}></img>
                 </div>
                 <div id='form' data-aos="zoom-in">
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form onSubmit={sendEmail}>
                         <label>Name</label>
-                        <input type="text" name="user_name" value={name} onChange={(e)=>setName(e.target.value)} required/>
+                        <input type="text" name="user_name" value={data.from_name} onChange={(e)=>setData({...data,from_name:e.target.value})} required/>
                         <label>Email</label>
-                        <input type="email" name="user_email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
+                        <input type="email" name="user_email" value={data.email_id} onChange={(e)=>setData({...data,email_id:e.target.value})} required/>
                         <label>Message</label>
-                        <textarea name="message" value={msg} onChange={(e)=>setMsg(e.target.value)} required/>
-                        <input type="submit" value="Send" />
+                        <textarea name="message" value={data.message} onChange={(e)=>setData({...data,message:e.target.value})} required/>
+                        <input type="submit"/>
                     </form>
                 </div>
             </div>
