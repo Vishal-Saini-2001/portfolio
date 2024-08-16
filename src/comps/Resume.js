@@ -1,5 +1,5 @@
 import React from 'react'
-import resume from './mycv.pdf';
+import resume from './MyCV.pdf';
 import { Position, Worker } from '@react-pdf-viewer/core';
 import { Viewer } from '@react-pdf-viewer/core';
 import '@react-pdf-viewer/core/lib/styles/index.css';
