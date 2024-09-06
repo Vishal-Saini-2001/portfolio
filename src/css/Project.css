@@ -50,12 +50,6 @@
     }
 }
 
-@media screen and (max-width:670px) {
-    .sec3 .project{
-        width:400px;
-    }
-}
-
 @media screen and (max-width:400px) {
     .sec3-h1{
         font-size: 30px;
