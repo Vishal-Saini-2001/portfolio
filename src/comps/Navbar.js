@@ -31,7 +31,7 @@ const Navbar = () => {
       </div>
       <div className='nav' data-aos="fade-down">
         <div id='logo'>
-          <img src={logo} />
+          <img src={logo} alt="Portfolio Logo" />
         </div>
         <div id='nav-links'>
           <ul>

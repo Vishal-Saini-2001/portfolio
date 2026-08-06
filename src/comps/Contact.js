@@ -32,7 +32,7 @@ const Contact = () => {
             <h1 className='con-h1'><span>Contact</span> me</h1>
             <div className='contact'>
                 <div id='image' data-aos="flip-up">
-                    <img src={img}></img>
+                    <img src={img} alt="Contact Illustration"></img>
                 </div>
                 <div id='form' data-aos="zoom-in">
                     <form onSubmit={sendEmail}>
