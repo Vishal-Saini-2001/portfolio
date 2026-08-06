@@ -1,5 +1,4 @@
 import React from 'react'
-import photo from '../assets/profile.png'
 import '../css/Sec1.css'
 import ReactTypingEffect from 'react-typing-effect';
 import resumePdf from './Resume.pdf';

@@ -5,44 +5,35 @@ const Sec3 = () => {
     const [percent, setPercent] = useState([0, 0, 0, 0, 0, 0, 0]);
 
     useEffect(() => {
+        const targets = [70, 80, 70, 60, 60, 70, 70];
 
-        setInterval(() => {
-            if (percent[0] < 70)
-            setPercent([...percent, percent[0]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[1] <= 80)
-            setPercent([...percent, percent[1]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[2] < 70)
-            setPercent([...percent, percent[2]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[3] <60)
-            setPercent([...percent, percent[3]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[4] < 60)
-            setPercent([...percent, percent[4]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[5] < 70)
-            setPercent([...percent, percent[5]++])
-        }, 60)
-        setInterval(() => {
-            if (percent[6] < 70)
-            setPercent([...percent, percent[6]++])
-        }, 60)
+        const interval = setInterval(() => {
+            setPercent(prevPercent => {
+                let isFinished = true;
+                const nextPercent = prevPercent.map((val, index) => {
+                    if (val < targets[index]) {
+                        isFinished = false;
+                        return val + 1;
+                    }
+                    return val;
+                });
 
+                if (isFinished) {
+                    clearInterval(interval);
+                    return prevPercent;
+                }
 
-    }, [])
+                return nextPercent;
+            });
+        }, 30);
 
+        return () => clearInterval(interval);
+    }, []);
     return (
         <section id="skills">
             <h1 id='sec3-h1'>My <span>skills</span></h1>
             <div className='sec3'>
-                <div className='skill'data-aos="flip-up">
+                <div className='skill' data-aos="flip-up">
                     <i class="fa-brands fa-html5"></i>
                     <div id='o-line'>
                         <div data-aos="fade-right" data-aos-duration="2500" id='i-line-1'></div>
