@@ -39,7 +39,7 @@ const Sec3 = () => {
     }, [])
 
     return (
-        <>
+        <section id="skills">
             <h1 id='sec3-h1'>My <span>skills</span></h1>
             <div className='sec3'>
                 <div className='skill'data-aos="flip-up">
@@ -104,7 +104,7 @@ const Sec3 = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </section>
     )
 }
 

@@ -28,7 +28,7 @@ const Contact = () => {
        
     };
     return (
-        <>
+        <section id="contact">
             <h1 className='con-h1'><span>Contact</span> me</h1>
             <div className='contact'>
                 <div id='image' data-aos="flip-up">
@@ -46,7 +46,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-        </>
+        </section>
 
     )
 }

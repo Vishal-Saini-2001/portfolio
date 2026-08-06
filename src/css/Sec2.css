@@ -1,54 +1,141 @@
-.sec2{
-    height:78vh;
+#about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 5% 40px 5%;
+    position: relative;
+    background-color: #0f172a;
+}
+
+.sec2 {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     align-items: center;
-    font-family: "Bruno Ace SC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 30px;
+    padding: 4rem 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
 }
 
-.sec2 #image{
-    width:30%;
+.sec2 .code-window {
+    width: 40%;
+    background: #0f172a;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
 }
 
-.sec2 #image img{
-    width:90%
+.sec2 .code-window:hover {
+    transform: perspective(1000px) rotateY(0deg) translateY(-10px);
 }
 
-.sec2 #about span{
-    color:#443266
+.window-header {
+    background: #1e293b;
+    padding: 12px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.sec2 #about{
-    color:#8C489F;
-    font-size: 30px;
-    width:50%;
-    text-wrap: wrap;
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
 }
 
-.sec2 #about h1{
-    text-decoration-line: underline;
+.dot.red { background-color: #ef4444; }
+.dot.yellow { background-color: #eab308; }
+.dot.green { background-color: #22c55e; }
+
+.window-body {
+    padding: 20px;
+    overflow-x: auto;
 }
 
-@media screen and (max-width:910px) {
-    .sec2 #about{
-        font-size: 20px;
+.window-body pre {
+    margin: 0;
+}
+
+.window-body code {
+    font-family: 'Fira Code', 'Consolas', monospace;
+    font-size: 0.9rem;
+    color: #38bdf8;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+.sec2 #about-text {
+    width: 50%;
+    color: #94a3b8; /* Slate 400 */
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.sec2 #about-text h1 {
+    font-size: 3rem;
+    color: #f8fafc;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.sec2 #about-text h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(to right, #38bdf8, #818cf8);
+    border-radius: 2px;
+}
+
+.sec2 #about-text span {
+    color: #38bdf8;
+}
+
+@media screen and (max-width: 968px) {
+    .sec2 {
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 3rem;
     }
-}
 
-@media screen and (max-width:400px) {
-    .sec2 #about{
-        width:400px;
+    .sec2 .code-window {
+        width: 80%;
+    }
+
+    .sec2 #about-text {
+        width: 90%;
         text-align: center;
-        padding: 0 20px;
     }
 
-    .sec2 #image{
-        width:200px;
-        display: flex;
-        justify-content: center;
+    .sec2 #about-text h1::after {
+        left: 50%;
+        transform: translateX(-50%);
     }
+}
 
+@media screen and (max-width: 585px) {
+    .sec2 .code-window {
+        width: 100%;
+    }
+    
+    .sec2 #about-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .sec2 #about-text {
+        font-size: 1rem;
+    }
 }
