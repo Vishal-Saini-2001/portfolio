@@ -11,17 +11,17 @@ const Project = () => {
         <section id="projects">
             <h1 className='sec3-h1'>My <span>Projects</span></h1>
             <div className='projects-grid'>
+                <div className='project' data-aos="zoom-in" onClick={() => window.open("https://github.com/Vishal-Saini-2001/Internal-Task-Tracking-App")}>
+                    <img src={p4} alt="Internal Task Tracking App" />
+                    <h3><span>Internal Task</span> Tracking App</h3>
+                </div>
                 <div className='project' data-aos="zoom-in" onClick={() => window.open("https://shareincentivecalculator.com")}>
-                    <img src={p4} alt="Share Incentive Plan Calculator" />
+                    <img src={p3} alt="Share Incentive Plan Calculator" />
                     <h3><span>Share Incentive</span> Plan Calculator </h3>
                 </div>
                 <div className='project' data-aos="zoom-in" onClick={() => window.open("https://github.com/Vishal-Saini-2001/ResumeBuilder-frontend")}>
                     <img src={p1} alt="Resume Builder" />
                     <h3><span>Resume</span> Builder</h3>
-                </div>
-                <div className='project' data-aos="zoom-in" onClick={() => window.open("https://github.com/Vishal-Saini-2001/PracticeProjects-ShoeStoreWebsite")}>
-                    <img src={p2} alt="Shoe Store Website" />
-                    <h3><span>Shoe</span> Store</h3>
                 </div>
                 <div className='project' data-aos="zoom-in" onClick={() => window.open("https://github.com/Vishal-Saini-2001/BatchSystem-Vishal")}>
                     <img src={p5} alt="Batch System Project" />

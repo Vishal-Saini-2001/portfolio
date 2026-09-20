@@ -13,7 +13,7 @@ const Sec1 = () => {
                     <div className="typing-container">
                         <h3>I build things for the web as a </h3>
                         <ReactTypingEffect
-                            text={["Front-End Developer", "MERN Stack Developer", "Full Stack Developer"]}
+                            text={["Associate Software Engineer", "Full Stack Developer", "React Developer"]}
                             cursorRenderer={cursor => <h2 className="typing-cursor">{cursor}</h2>}
                             displayTextRenderer={(text, i) => {
                                 return (
@@ -27,7 +27,7 @@ const Sec1 = () => {
                         />
                     </div>
                     <p className="hero-desc">
-                        Passionate Web Developer focused on crafting clean, user-friendly experiences and building robust web applications.
+                        Full stack developer with 1+ year of experience building responsive web applications with React.js, Next.js, TypeScript, and Python.
                     </p>
 
                     <div id='sec1-btns'>

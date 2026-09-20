@@ -62,7 +62,7 @@ const Sec3 = () => {
                     <h3>{percent[3]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
-                    <i class="fa-brands fa-node-js"></i>
+                    <i class="fa-brands fa-python"></i>
                     <div id='o-line'>
                         <div data-aos="fade-right" data-aos-duration="2500" id='i-line-4'></div>
                     </div>
@@ -76,7 +76,7 @@ const Sec3 = () => {
                     <h3>{percent[5]}%</h3>
                 </div>
                 <div className='skill' data-aos="flip-up">
-                    <i class="fa-solid fa-c"></i>
+                    <i class="fa-solid fa-database"></i>
                     <div id='o-line'>
                         <div data-aos="fade-right" data-aos-duration="2500" id='i-line-6'></div>
                     </div>
